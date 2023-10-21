@@ -1,0 +1,15 @@
+*.pyc
+*.iml
+*.xml
+staticfiles
+/static/
+env
+db_postgres
+/media/
+fabfile.pyc
+.vscode
+.env
+rest.http
+docker-compose-local.yml
+/CACHE/
+/logs/

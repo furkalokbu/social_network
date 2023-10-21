@@ -1,0 +1,6 @@
+Django==4.2.0
+djangorestframework==3.14.0
+psycopg2-binary
+Markdown==3.5
+django-filter==23.3
+django-environ==0.7.0
