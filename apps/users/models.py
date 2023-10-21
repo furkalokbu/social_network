@@ -3,7 +3,6 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractUser
 
 
-
 class TimeStampedModel(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)

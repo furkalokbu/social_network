@@ -3,7 +3,6 @@ from django.utils.translation import gettext_lazy as _
 from apps.users.models import TimeStampedModel, User
 
 
-
 class Post(TimeStampedModel):
     title = models.CharField(max_length=200)
     body = models.TextField()
