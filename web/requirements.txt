@@ -1,7 +1,10 @@
 Django==4.2.0
 djangorestframework==3.14.0
+drf-yasg==1.21.7
+djangorestframework-simplejwt==5.3.0
 psycopg2-binary
 Markdown==3.5
 django-filter==23.3
 django-environ==0.7.0
 flake8==6.1.0
+django-user-agents==0.4.0

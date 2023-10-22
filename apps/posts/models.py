@@ -15,8 +15,8 @@ class Post(TimeStampedModel):
 
 class RequestHistory(TimeStampedModel):
     user = models.ForeignKey(User, verbose_name=_("user"), on_delete=models.CASCADE)
-    ip = models.CharField(_("ip"), max_length=50)
-    browser = models.CharField(_("browser"), max_length=50, blank=True)
+    method = models.CharField(max_length=10, default='')
+    path = models.CharField(max_length=255, default='')
 
     def __str__(self):
         return f"{self.user} - {self.os} {self.device}"
