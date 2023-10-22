@@ -13,7 +13,6 @@ from rest_framework_simplejwt.settings import api_settings
 from social_network.services import update_login_history
 
 
-
 class TokenObtainPairView(TokenViewBase):
     """
     Takes a set of user credentials and returns an access and refresh JSON web
@@ -39,4 +38,3 @@ class RegisterViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
     queryset = get_user_model().objects.all()
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer
-

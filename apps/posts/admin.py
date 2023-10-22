@@ -11,10 +11,8 @@ class PostAdmin(admin.ModelAdmin):
         "updated_at",
     )
 
+
 @admin.register(RequestHistory)
 class RequestHistoryAdmin(admin.ModelAdmin):
     list_display = ("id", "user", "method", "path", "created_at")
-    readonly_fields = (
-        "created_at",
-        "updated_at",
-    )
+    readonly_fields = ("created_at", "updated_at",)
