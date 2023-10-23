@@ -29,3 +29,4 @@ urlpatterns = [
     path('api/v1/', include('apps.posts.urls')),
     path('api/v1/', include('rest_framework.urls')),
 ]
+
